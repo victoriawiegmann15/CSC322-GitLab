@@ -1,0 +1,28 @@
+set +H
+cd ~/GitLab
+git init
+git add HelloWorld.c
+git commit -m 'Initial commit: Hello World!'
+git branch -M main
+git remote add origin git@github.com:VictoriaWiegmann15/CSC322-GitLab.git
+git push -u origin main
+sed -i '' 's/Hello World!/Hello Crool World!/g' HelloWorld.c
+git commit -am 'Change greeting to "Hello Crool World!"'
+git push
+git switch -c Happy
+git push -u origin Happy
+sed -i '' 's/Hello Crool World!/Hello Happy World!/g' HelloWorld.c
+git commit -am 'Happy branch: say "Hello Happy World!"'
+git push
+git switch main
+sed -i '' 's/Hello Crool World!/Hello Very Crool World!/g' HelloWorld.c
+git commit -am 'Main: say "Hello Very Crool World!"'
+git push
+git merge Happy
+git add HelloWorld.c
+git commit -m 'Merge Happy into main → resolve to "Hello Very Happy World!"'
+git push
+sed -i '' 's/Hello Very Happy World!/Hello Crazy World!/g' HelloWorld.c
+git commit -am 'Say "Hello Crazy World!"'
+git push
+git log --all --graph --oneline --decorate

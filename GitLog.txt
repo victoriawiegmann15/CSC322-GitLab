@@ -1,0 +1,8 @@
+* 571fc0e (HEAD -> main, origin/main) Say "Hello Crazy World!"
+*   59ea3c3 Merge Happy into main → resolve to "Hello Very Happy World!"
+|\  
+| * 77247ef (origin/Happy, Happy) Happy branch: say "Hello Happy World!"
+* | a581614 Main: say "Hello Very Crool World!"
+|/  
+* 0eeb9ae Change greeting to "Hello Crool World!"
+* 2414fd8 Initial commit: Hello World!
